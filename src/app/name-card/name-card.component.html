@@ -1,0 +1,17 @@
+<h2>Name Card</h2>
+<div>
+  <h5>Do you want to creat card?</h5>
+  <p>Input name card: <input type="text" [(ngModel)]="cardName"></p>
+  <p>Input email: <input type="text" (change)="onChangeEmail($event.target.value)"></p>
+  <p>Input phone: <input type="text" (change)="onChangePhone($event.target.value)"></p>
+</div>
+<div class="name-card">
+  <div class="name-card__content-left">
+    <img src="/assets/ava.png" alt="Logo" class="name-card__avatar">
+  </div>
+  <div class="name-card__content-right">
+    <h3 class="name-card__heading">{{ cardName }}</h3>
+    <p class="name-card__text">{{ email }}</p>
+    <p class="name-card__text">{{ phone }}</p>
+  </div>
+</div>
