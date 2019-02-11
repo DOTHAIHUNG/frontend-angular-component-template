@@ -2,8 +2,8 @@
 <div>
   <h5>Do you want to creat card?</h5>
   <p>Input name card: <input type="text" [(ngModel)]="cardName"></p>
-  <p>Input email: <input type="text" (change)="onChangeEmail($event.target.value)"></p>
-  <p>Input phone: <input type="text" (change)="onChangePhone($event.target.value)"></p>
+  <p>Input email: <input type="text" [(ngModel)]="email"></p>
+  <p>Input phone: <input type="text" [(ngModel)]="phone"></p>
 </div>
 <div class="name-card">
   <div class="name-card__content-left">

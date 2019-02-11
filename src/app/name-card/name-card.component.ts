@@ -10,16 +10,6 @@ export class NameCardComponent implements OnInit {
   @Input() email: string;
   @Input() phone: string;
 
-  onChangeCardName(value) {
-    this.cardName = value;
-  }
-  onChangeEmail(value) {
-    this.email = value;
-  }
-  onChangePhone(value) {
-    this.phone = value;
-  }
-
   constructor() {
   }
 
